@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body class="blog">
+  <div class = "container-nav-project">
+    <nav class = "nav-bar-project">
+        <h3>Arshiya Hafis</h3>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'get_project' %}">Projects</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="{% url 'get_blog' %}">Blog</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="line">
+        <div class="circle a">
+            <div class="box-title title-left">
+                January 3rd 2024
+            </div>
+            <div class="box-content box-left">
+                <h2 class="content-title">Your Title Here</h2>
+                <img src="/static/img/1.jpg"  alt="Your Image Alt Text" class="content-image">
+            </div>
+        </div>
+        <div class="circle b">
+            <div class="box-title title-right"></div>
+            <div class="box-content box-right"></div>
+        </div>
+    </div>
+</body>
+</html>

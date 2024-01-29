@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arshiya Hafis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+
+  <body class = "home">
+    <div class = "container">
+        <h1 class = "statement">Arshiya Hafis</h1>
+        <nav class = "nav-bar">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'get_project' %}">Projects</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="{% url 'get_blog' %}">Blog</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+        <ul class="social-icons">
+          <li><a href="#"><i class='bx bxl-instagram bx-sm' style='color:#ffffff' ></i></a></li>
+          <li><a href="#"><i class='bx bxl-linkedin bx-sm' style='color:#ffffff'  ></i></a></li>
+          <li><a href="#"><i class='bx bxl-github bx-sm' style='color:#ffffff' ></i></a></li>
+          <li><a href="#"><i class='bx bx-envelope bx-sm' style='color:#ffffff' ></i></a></li>
+        </ul>
+    </div>
+  </body>
+</html>

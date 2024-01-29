@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arshiya Hafis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/script.js' %}"></script>
+  </head>
+
+  <body class = "project">
+    <div class = "container-nav-project">
+        <nav class = "nav-bar-project">
+            <h3>Arshiya Hafis</h3>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'get_project' %}">Projects</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="{% url 'get_blog' %}">Blog</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-project">
+      <div class="project-box">
+        <img src="/static/img/1.jpg" alt="project-img">
+        <div class="tags-container">
+          <span class="tag">Tag 1</span>
+          <span class="tag">Tag 2</span>
+        </div>
+        <div class="circle-icons">
+          <div class="circle-icon" onclick="window.location.href='your_first_url_here'">
+            <i class='bx bxl-github bx-md' style='color:#ffffff'></i>
+          </div>
+          <div class="circle-icon" onclick="window.location.href='your_second_url_here'">
+            <i class='bx bx-link bx-md' style='color:#ffffff'></i>
+          </div>
+        </div>
+      </div>
+      <div class="project-box">
+        <img src="/static/img/2.jpg" alt="project-img">
+      </div>
+      <div class="project-box">
+        <img src="/static/img/3.png" alt="project-img">
+      </div>
+    </div>
+  </body>
+</html>
