@@ -68,3 +68,6 @@ def update_project(request, name, id):
 
 def get_blog(request):
     return render(request, 'blog.html')
+
+def photo(request):
+    return render(request, 'photo.html')
